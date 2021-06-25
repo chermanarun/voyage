@@ -1,0 +1,7 @@
+{
+  "name": "indianVoyage",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

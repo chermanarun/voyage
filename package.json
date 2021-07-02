@@ -6,7 +6,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "serve": "ng serve --port 4300 -o --proxy-config proxy.config.json",
+    "build": "node --max_old_space_size=8000 ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

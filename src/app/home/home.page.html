@@ -1,5 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-searchbar type="text" color="light" placeholder="Search text" clearInput>
+  </ion-searchbar>
+</ion-header>
 <ion-content [fullscreen]="true">
-  <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
-    <ion-button color="primary" (click)="gotopage()">Go to State</ion-button>
+  <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill class="country-container">
+    <div class="country-image" fxLayoutAlign="center center" fxFlexFill>
+      <img src="assets/images/INDIA_cr@2x.png" alt="India" usemap="#countrymap">
+      <map name="countrymap">
+        <area shape="rect" coords="34,44,270,350" alt="Maharastra" (click)="gotopage()">
+        <area shape="rect" coords="290,172,333,250" alt="TamilNadu" (click)="gotopage()">
+        <area shape="circle" coords="337,300,44" alt="Bihar" (click)="gotopage()">
+      </map>
+    </div>
   </div>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+    </div>
+  </ion-toolbar>
+</ion-footer>

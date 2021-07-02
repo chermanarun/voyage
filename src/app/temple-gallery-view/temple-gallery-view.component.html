@@ -1,6 +1,14 @@
+<ion-header class="ion-no-border">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-header>
 <ion-content [fullscreen]="true">
-  <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
-    <p>temple-gallery-view works!</p>
-    <ion-button color="primary" (click)="gotopage()">Home </ion-button>
+  <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill class="temple-container">
+    <div class="temple-image" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+      <img (click)="gotopage()" src="assets/images/sun_temple_bihar_hj.png"
+        alt="CHHARAPATHI SHIVAJI TERMINUS" usemap="#templemap">
+     
+    </div>
   </div>
 </ion-content>

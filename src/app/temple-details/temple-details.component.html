@@ -1,5 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-header>
 <ion-content [fullscreen]="true">
-  <div fxLayout="column"  fxLayoutAlign="center center" fxFlexFill>
-    <ion-button color="primary" (click)="gotopage()">Go to Gallery</ion-button>
+  <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill class="temple-container">
+    <div class="temple-image" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+      <img (click)="gotopage()" src="assets/images/photo-1566552881560-0be862a7c4@2x.png"
+        alt="CHHARAPATHI SHIVAJI TERMINUS" usemap="#templemap">
+      <h1>CHHARAPATHI SHIVAJI TERMINUS</h1>
+      <p>Chhatrapati Shivaji Terminus is
+        a historic terminal train station
+        & UNESCO World Heritage Site
+        in Mumbai, Maharashtra, India.</p>
+    </div>
   </div>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <ion-avatar>
+        <img src="assets/images/ID360-icon_gl@2x.png">
+      </ion-avatar>
+    </div>
+  </ion-toolbar>
+</ion-footer>
